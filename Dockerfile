@@ -1,6 +1,6 @@
 #base image
 FROM openjdk:17
-COPY . /src/java
-WORKDIR /src/java
+COPY . /src/python
+WORKDIR /src/python
 RUN ["python","python.py"]
 #ENTRYPOINT ["java","Prime"]
