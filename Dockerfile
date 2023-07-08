@@ -1,5 +1,5 @@
 #base image
-FROM openjdk:17
+FROM openpython
 COPY . /src/python
 WORKDIR /src/python
 RUN ["python","python.py"]
