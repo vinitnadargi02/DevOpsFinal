@@ -4,20 +4,21 @@ pipeline
   
   stages
   {
-    /*stage('Build')
+    stage('Build')
     {
       steps
       {
-      bat 'python python.py'
- 
+      //bat 'python python.py'
+      bat 'javac HelloWorld.java'
       }
      }
-     */
+     
      stage('Run')
      {
       steps
         {
-          bat 'python python.py'
+          //bat 'python python.py'
+          bat 'java HelloWorld'
           }
          }
         }
